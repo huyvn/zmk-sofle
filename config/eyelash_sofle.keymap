@@ -80,11 +80,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&bootloader  &sys_reset  &trans  &kp SLASH  &kp ASTRK  &trans       &mmv MOVE_UP     &kp PRINTSCREEN  &kp CAPS       &kp SCROLLLOCK  &kp KP_NUMLOCK  &sys_reset     &bootloader
+&trans       &kp PIPE    &kp N7  &kp N8     &kp N9     &kp MINUS    &mmv MOVE_DOWN   &kp PG_UP        &kp HOME       &kp UP          &kp END         &kp BACKSLASH  &kp PIPE
+&kp CAPS     &kp GRAVE   &kp N4  &kp N5     &kp N6     &kp PLUS     &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT       &kp DOWN        &kp RIGHT       &kp PIPE       &trans
+&trans       &kp TILDE   &kp N1  &kp N2     &kp N3     &kp EQUAL    &mmv MOVE_RIGHT  &trans           &kp BACKSPACE  &kp INSERT      &kp DEL         &kp BACKSLASH  &trans
+&mkp RCLK    &kp DOT     &kp N0  &trans     &trans     &trans       &mkp LCLK        &trans           &trans         &trans          &trans          &trans
             >;
 
             display-name = "num_nav";
@@ -93,11 +93,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&bootloader  &sys_reset     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &mmv MOVE_UP     &msc SCRL_UP       &trans          &trans          &trans           &sys_reset      &bootloader
+&trans       &kp BACKSLASH  &kp AMPERSAND   &kp ASTRK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mmv MOVE_DOWN   &msc SCRL_DOWN     &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans          &trans
+&trans       &kp MINUS      &kp DOLLAR      &kp PERCENT      &kp CARET             &kp LEFT_BRACE           &mmv MOVE_LEFT   &kp LEFT_BRACKET   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &trans
+&trans       &kp UNDER      &kp EXCL        &kp AT           &kp HASH              &kp RIGHT_BRACE          &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc SCRL_DOWN  &trans
+&mkp RCLK    &kp PLUS       &kp EQUAL       &trans           &trans                &trans                   &mkp LCLK        &trans             &trans          &trans          &mkp MB4         &mkp MB5
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -106,11 +106,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&soft_off        &trans           &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &kp C_PREV          &trans  &trans            &trans        &trans              &trans  &soft_off
+&bootloader      &trans           &bt BT_SEL 0  &bt BT_SEL 1  &trans        &out OUT_BLE    &kp C_NEXT          &trans  &kp C_VOL_DN      &kp C_VOL_UP  &kp C_MUTE          &trans  &bootloader
+&sys_reset       &trans           &trans        &trans        &trans        &out OUT_USB    &kp C_REWIND        &trans  &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT          &trans  &sys_reset
+&rgb_ug RGB_TOG  &rgb_ug RGB_OFF  &trans        &bt BT_PRV    &bt BT_NXT    &out OUT_TOG    &kp C_FAST_FORWARD  &trans  &trans            &kp C_REWIND  &kp C_FAST_FORWARD  &trans  &trans
+&kp C_MUTE       &bt BT_CLR_ALL   &bt BT_CLR    &trans        &trans        &trans          &kp C_PLAY_PAUSE    &trans  &trans            &trans        &trans              &trans
             >;
 
             label = "misc_media";

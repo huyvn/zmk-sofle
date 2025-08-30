@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  base_win:
+  linux:
   - F1
   - F2
   - F3
@@ -53,7 +53,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: base_mac, h: toggle}
+  - {t: mac, h: toggle}
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:keyboard-space$$', h: num_nav}
@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  base_mac:
+  mac:
   - F1
   - F2
   - F3
@@ -313,7 +313,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: base_win, h: toggle}
+  - {t: linux, h: toggle}
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:keyboard-space$$', h: num_nav}

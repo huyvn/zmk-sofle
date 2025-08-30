@@ -1,26 +1,62 @@
-- [中文](README.md)
-- [English](README_EN.md)
+# Eyelash Sofle Aliexpress
 
-# 更新列表
-- 2025/3/30 增加睡眠进入时间1小时  增加防抖时间 优化睡眠后功耗 
-- 2024/12/21
-  1. 增加zmk-studio支持（只需要刷新左手即可使用）。
-- 2024/10/24
-  1. 修改供电模式，功耗降低。
-  2. 修正RGB供电自动关闭的功能。
---2025/8/22
-   1.更新了soft off。当您同时按下 Q、S 和 Z 键并按住 2 秒钟时，键盘将进入深度睡眠状态，无法通过按键唤醒。携带外出时可以使用此功能。激活方式为按一次复位开关。
-   2.这个月，我还更新了矮轴版本sofle和corne的外壳。框架和底板加厚了，复位开关的开口也进行了调整，可以轻松按下复位开关。目前，我们仍在构思如何设计带有倾斜支架的外壳。如果您仔细检查过 PCB，您会注意到有用于扩展 IO 的预留接口。不知道有没有人能够使用它们，我会尝试一下！
-   3.右侧键盘屏幕上的GIF动画被移除，这将显著降低右侧键盘的功耗。
+## Features
 
-> 如果您的键盘于2025年8月22之前更新，请更新最新的固件。
-> 
----
-# 联系我
+### Home Row Mods
 
-如需3D打印的模型文件或者键盘有任何异常和故障，请联系380465425@qq.com
+Home Row Mod-Tap keys are set with `tap-preferred` flavor, on both base layers for Windows/Linux and Mac.
 
-# Sofle键位图
+### Soft-Off
+
+This triggers a deep sleep state to conserve battery. 
+Keyboard can only turn back on by pressing reset hardware button, or flip on/off switch.
+
+There's a trigger in the keymap.
+
+## Update Keymap
+
+Go to <https://nickcoutsos.github.io/keymap-editor/>
+
+Select `Clipboard` and paste in content of [eyelash_sofle.json](./config/eyelash_sofle.json), and  [eyelash_sofle.keymap](./config/eyelash_sofle.keymap)
+
+Make the change you want on the website. Then copy-paste and commit the updated keymap file.
+
+Push your change to Github. 
+
+Github Action will pickup the change and do 2 things:
+* Build ZMK firmware
+* Redraw the keymap image
+
+## Building ZMK
+
+Github Action automatically builds the firmware from lastest `main`.
+
+To download the firmware, go to Github repo, under Actions tab.
+Select `Build ZMK firmware` workflow, and select the lastest build.
+The firmware file is under `Artifacts`.
+
+The firmware zip file contains 3 files:
+* left-side firmware with ZMK studio
+* right-side firmware with screen
+* debug firmware
+
+## Flashing ZMK
+
+Do these steps for each side:
+
+1. Connect keyboard to computer host
+2. Check the keymap, and click the key corresponding to `bootloader`
+   * Note that `sys_reset` key only restarts the keyboard with current firmware, not for flashing new firmware
+   * The nice-nano screen will turn blank
+   * Host will detect a USB storage to connect. If you don't see USB storage, check if cable supports data transfer, or only charging.
+3. Copy firwmare `uf2` file into the root of USB storage, to load the new firmware
+   * Careful to load the correct firmware for left/right side 
+4. Keyboard will restart if firmware loading is successful
+
+
+## Eyelash Sofle Keymap
+
+This file is updated automatically by Github Action.
 
 <img src="keymap-drawer/eyelash_sofle.svg" >
 

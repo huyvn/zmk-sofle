@@ -65,30 +65,30 @@
     keymap {
         compatible = "zmk,keymap";
 
-        mac {
-            bindings = <
-&kp F1        &kp F2       &kp F3          &kp F4       &kp F5       &kp F6        &kp UP         &kp F7      &kp F8       &kp F9           &kp F10     &kp F11         &kp F12
-&kp GRAVE     &kp Q        &kp W           &kp E        &kp R        &kp T         &kp DOWN       &kp Y       &kp U        &kp I            &kp O       &kp P           &kp BSLH
-&kp LCMD      &hm LCTRL A  &hm LALT S      &hm RCMD D   &hm LSHFT F  &hm LGUI G    &kp LEFT       &hm RGUI H  &hm RSHFT J  &hm LCMD K       &hm RALT L  &hm RCTRL SEMI  &kp APOS
-&kp LEFT_ALT  &kp Z        &kp X           &kp C        &kp V        &kp B         &kp RIGHT      &kp N       &kp M        &kp COMMA        &kp DOT     &kp FSLH        &hm RSHIFT ENTER
-&tog 1        &kp UP       &kp DOWN_ARROW  &lt 2 SPACE  &lt 3 TAB    &lt 4 ESC     &kp BACKSPACE  &lt 4 DEL   &lt 3 ENTER  &lt 2 BACKSPACE  &kp LEFT    &kp RIGHT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-            display-name = "mac";
-        };
-
         linux {
             bindings = <
 &kp F1        &kp F2  &kp F3          &kp F4       &kp F5       &kp F6        &kp UP     &kp F7      &kp F8       &kp F9           &kp F10      &kp F11        &kp F12
 &kp GRAVE     &kp Q   &kp W           &kp E        &kp R        &kp T         &kp DOWN   &kp Y       &kp U        &kp I            &kp O        &kp P          &kp BSLH
 &kp LCTRL     &kp A   &hm LALT S      &hm LCTRL D  &hm LSHFT F  &hm LGUI G    &kp LEFT   &hm RGUI H  &hm RSHFT J  &hm RCTRL K      &hm RALT L   &kp SEMI       &kp APOS
 &kp LEFT_ALT  &kp Z   &kp X           &kp C        &kp V        &kp B         &kp RIGHT  &kp N       &kp M        &kp COMMA        &kp DOT      &kp FSLH       &hm RSHIFT ENTER
-&tog 1        &kp UP  &kp DOWN_ARROW  &lt 2 SPACE  &lt 3 TAB    &lt 4 ESC     &kp INS    &lt 4 DEL   &lt 3 ENTER  &lt 2 BACKSPACE  &kp PAGE_UP  &kp PAGE_DOWN
+&tog 1        &kp UP  &kp DOWN_ARROW  &lt 3 SPACE  &lt 3 TAB    &lt 4 ESC     &kp INS    &lt 4 DEL   &lt 3 ENTER  &lt 3 BACKSPACE  &kp PAGE_UP  &kp PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
             display-name = "linux";
+        };
+
+        mac {
+            bindings = <
+&kp F1        &kp F2       &kp F3          &kp F4       &kp F5       &kp F6        &kp UP         &kp F7      &kp F8       &kp F9           &kp F10     &kp F11         &kp F12
+&kp GRAVE     &kp Q        &kp W           &kp E        &kp R        &kp T         &kp DOWN       &kp Y       &kp U        &kp I            &kp O       &kp P           &kp BSLH
+&kp LCMD      &hm LCTRL A  &hm LALT S      &hm RCMD D   &hm LSHFT F  &hm LGUI G    &kp LEFT       &hm RGUI H  &hm RSHFT J  &hm LCMD K       &hm RALT L  &hm RCTRL SEMI  &kp APOS
+&kp LEFT_ALT  &kp Z        &kp X           &kp C        &kp V        &kp B         &kp RIGHT      &kp N       &kp M        &kp COMMA        &kp DOT     &kp FSLH        &hm RSHIFT ENTER
+&tog 1        &kp UP       &kp DOWN_ARROW  &lt 3 SPACE  &lt 3 TAB    &lt 4 ESC     &kp BACKSPACE  &lt 4 DEL   &lt 3 ENTER  &lt 3 BACKSPACE  &kp LEFT    &kp RIGHT
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            display-name = "mac";
         };
 
         num_nav {

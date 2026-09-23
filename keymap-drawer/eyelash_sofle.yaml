@@ -1,70 +1,5 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  linux:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - $$mdi:arrow-up-bold$$
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: '`', s: '~'}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-control$$
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: LGUI}
-  - $$mdi:arrow-left-bold$$
-  - {t: H, h: RGUI}
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-option$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: mac, h: toggle}
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:keyboard-esc$$', h: misc_media}
-  - {t: '$$mdi:keyboard-space$$', h: num_nav}
-  - {t: '$$mdi:keyboard-tab$$', h: sym_mouse}
-  - INS
-  - {t: '$$mdi:keyboard-return$$', h: sym_mouse}
-  - {t: '$$mdi:backspace$$', h: num_nav}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: misc_media}
-  - PgUp
-  - PgDn
   mac:
   - F1
   - F2
@@ -130,6 +65,71 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: misc_media}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
+  linux:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - $$mdi:arrow-up-bold$$
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: '`', s: '~'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: G, h: LGUI}
+  - $$mdi:arrow-left-bold$$
+  - {t: H, h: RGUI}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-option$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: mac, h: toggle}
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:keyboard-esc$$', h: misc_media}
+  - {t: '$$mdi:keyboard-space$$', h: num_nav}
+  - {t: '$$mdi:keyboard-tab$$', h: sym_mouse}
+  - INS
+  - {t: '$$mdi:keyboard-return$$', h: sym_mouse}
+  - {t: '$$mdi:backspace$$', h: num_nav}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: misc_media}
+  - PgUp
+  - PgDn
   num_nav:
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
